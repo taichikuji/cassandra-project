@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 
 networks:
   app-tier:
@@ -13,11 +13,11 @@ services:
       - '7000:7000'
       - '9042:9042'
     volumes:
-      - 'cassandra_data:/bitnami'
+      - 'cassandra_disk:/var/bitnami/cassandra'
     environment:
       - CASSANDRA_SEEDS=cassandra
       - CASSANDRA_PASSWORD_SEEDER=yes
       - CASSANDRA_PASSWORD=cassandra
 volumes:
-  cassandra_data:
+  cassandra_disk:
     driver: local
