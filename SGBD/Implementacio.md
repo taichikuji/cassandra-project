@@ -42,3 +42,25 @@ Nota: Caldrà saber interpretar la documentació tècnica del fabricant.
 6) Identificació dels diferents tipus d’usuari.
 
 7) Cost comercial del SGBD i caldrà identificar el número de clients concurrents màxim.
+
+# Fase 2. Projecte SGBD: Configuració
+
+1) Implementació de varies taules del esquema de la base de dades.
+
+2) Afegir contingut a les taules corresponents.
+
+3) Descripció dels paràmetres de configuració d’inici i d’aturada del SGBD.
+
+4) Configuració del SGBD tenint en compte els requeriments d’usuari.
+
+5) Identificació dels comptes d’administració del SGBD i de la resta d’usuaris.
+
+6) Implementació de consultes relatives a control de dades (5) i altres d’obtenció de dades (5).
+
+~~7) Configuració del Diccionari de Dades, en funció dels requeriments establerts.~~
+
+8) Configuració de l’accés remot a la base de dades, tant des de client com des d’altres processos executats en el mateix servidor.
+
+9) Definició i configuració dels paràmetres relatius a les connexions: temps d’espera, nombre màxim de connexions, etc..
+
+**NOTA:** Recordeu que aquestos punts s'afegeixen al índex del document corresponent.
