@@ -7,13 +7,14 @@ networks:
 services:
   cassandra:
     image: 'bitnami/cassandra:3'
+    user: root
     networks:
       - app-tier
     ports:
       - '7000:7000'
       - '9042:9042'
     volumes:
-      - 'cassandra_disk:/var/bitnami/cassandra'
+      - 'cassandra_disk:/bitnami'
     environment:
       - CASSANDRA_SEEDS=cassandra
       - CASSANDRA_PASSWORD_SEEDER=yes
